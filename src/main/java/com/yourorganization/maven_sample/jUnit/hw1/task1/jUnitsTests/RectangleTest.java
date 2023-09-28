@@ -1,6 +1,6 @@
-package com.yourorganization.maven_sample.jUnit.hw1.jUnits;
+package com.yourorganization.maven_sample.jUnit.hw1.task1.jUnitsTests;
 
-import com.yourorganization.maven_sample.jUnit.hw1.models.Rectangle;
+import com.yourorganization.maven_sample.jUnit.hw1.task1.models.Rectangle;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;

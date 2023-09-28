@@ -1,4 +1,4 @@
-package com.yourorganization.maven_sample.jUnit.hw1.models;
+package com.yourorganization.maven_sample.jUnit.hw1.task1.models;
 
 public class Triangle {
     public double calculateArea(double base, double height) {

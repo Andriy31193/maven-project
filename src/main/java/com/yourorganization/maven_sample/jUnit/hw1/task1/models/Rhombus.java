@@ -1,4 +1,4 @@
-package com.yourorganization.maven_sample.jUnit.hw1.models;
+package com.yourorganization.maven_sample.jUnit.hw1.task1.models;
 
 public class Rhombus {
     public double calculateArea(double diagonal1, double diagonal2) {
