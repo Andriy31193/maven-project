@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  ts-postgres:
+    container_name: test-db1
+    image: postgres:15.1-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: sa
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: test-db
+    ports:
+      - "5437:5432"
+    volumes:
+      - myapp:/var/lib/postgresql/data
+
+volumes:
+  myapp:

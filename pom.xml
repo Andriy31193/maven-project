@@ -42,6 +42,11 @@
     </profile>
 </profiles>
     <dependencies>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.23</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/animal-sniffer-annotations -->
         <dependency>
             <groupId>org.codehaus.mojo</groupId>
