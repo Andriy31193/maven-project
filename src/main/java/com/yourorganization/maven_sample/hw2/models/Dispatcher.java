@@ -1,23 +1,21 @@
 package com.yourorganization.maven_sample.hw2.models;
 
 import com.yourorganization.maven_sample.hw2.exceptions.*;
+import org.apache.log4j.Logger;
 
-import javax.xml.crypto.Data;
 import java.sql.*;
-import java.text.SimpleDateFormat;
-import java.time.Instant;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.Date;
 
 public class Dispatcher {
 
+    private static final Logger LOGGER = Logger.getLogger(Dispatcher.class);
+
     private LocalDateTime clock = LocalDateTime.now();
     // Temporary arrays just for the generation method
-    private HashMap<String, Integer> destinations = new HashMap<String, Integer>();
-    private HashMap<String, Integer> cargoTypes = new HashMap<String, Integer>();
+    private final HashMap<String, Integer> destinations = new HashMap<>();
+    private final HashMap<String, Integer> cargoTypes = new HashMap<>();
 
     private static Dispatcher instance;
 
@@ -25,13 +23,24 @@ public class Dispatcher {
     private List<Vehicle> availableVehicles = new ArrayList<>();
     private List<Request> requests = new ArrayList<>();
     private List<Trip> trips = new ArrayList<>();
-    private List<Trip> newTrips = new ArrayList<>();
+    private final List<Trip> newTrips = new ArrayList<>();
 
+
+    /// INITIALIZATION ///
+    public static Dispatcher getInstance() {
+        if (instance == null)
+            instance = new Dispatcher();
+
+        return instance;
+    }
     public Dispatcher() {
         init();
     }
     private  void init()
     {
+        if (instance == null)
+            instance = this;
+
         destinations.put("New York City", 250);
         destinations.put("Los Angeles", 400);
         destinations.put("Chicago", 300);
@@ -54,11 +63,10 @@ public class Dispatcher {
         cargoTypes.put("Toys", 1);
         cargoTypes.put("Jewelry", 7);
         cargoTypes.put("Medical Supplies", 5);
-
-        this.availableDrivers = getDrivers();
-        this.availableVehicles = getVehicles();
-        this.requests = getRequests();
     }
+
+
+    /// MAIN METHODS ///
     public void start()
     {
         startDay();
@@ -88,159 +96,125 @@ public class Dispatcher {
     }
     private void startDay()
     {
-
+        logMessage("New day started: "+clock.toLocalDate().toString());
         // Getting all available requests from database
-        this.requests = this.getRequests();
+        try {
 
-        // Generating random requests for today
-        List<Request> requestsForToday = this.gRandomRequests(0);
+            this.requests = this.getRequests();
+            this.availableDrivers = this.getDrivers();
+            this.availableVehicles = this.getVehicles();
 
-        // Processing new requests
-        this.processRequests(requestsForToday);
+            // Generating random requests for today
+            List<Request> requestsForToday = this.gRandomRequests(0);
 
-        // Getting all available trips from database
+            logMessage("Dispatcher got "+requestsForToday.size()+" requests today!");
 
-        this.trips = getTrips();
-        this.processTrips(this.trips);
+            // Processing new requests
+            this.processRequests(requestsForToday);
 
-        displayTrips();
+            // Getting all available trips from database
+
+            this.trips = getTrips();
+            this.processTrips(this.trips);
+
+            displayTrips();
+        } catch (Exception e)
+        {
+            logMessage("### Unable to start the day due to: "+ e.getMessage());
+        }
     }
     public void closeDay()
     {
         clock = clock.plusDays(1);
     }
-    public void displayTrips()
-    {
-
-        System.out.println("Current date: "+ clock.toLocalDate().toString());
-
-        for (int i = 0; i < this.trips.size(); i++)
-        {
-            Trip trip = this.trips.get(i);
-            System.out.println("------------------------------");
-            System.out.println("Trip #"+trip.getTripId());
-            System.out.println("Placed at "+trip.getStartDate());
-            System.out.println("Ends at "+trip.getEndDate());
-            System.out.println("Total payment:  "+trip.getTotalPayment());
-            System.out.println("Status: "+trip.getTripStatus());
-        }
-
-
-    }
 
     // Simple generation method
     public List<Request> gRandomRequests(int size)
     {
-
-
         List<Request> newRequests = new ArrayList<>();
-        Random random = new Random();
 
-        if(size == 0)
-            size = random.nextInt(5);
+        try {
+            Random random = new Random();
 
-        int lastId = 0;
-        if(this.requests.size() > 0)
-            lastId = this.requests.get(this.requests.size()-1).getRequestId();
+            if (size == 0)
+                size = random.nextInt(5);
 
-        for (int i = 0; i < size; i++, lastId++)
+            int lastId = 0;
+            if (this.requests.size() > 0)
+                lastId = this.requests.get(this.requests.size() - 1).getRequestId();
+
+            if(this.destinations.isEmpty() || this.cargoTypes.isEmpty())
+                throw new RequestsGenerationException("### Destinations or cargo types array is empty. Fill arrays with correct data and try again.");
+
+            for (int i = 0; i < size; i++, lastId++) {
+                int id = lastId + 1;
+
+                String destination = (String) destinations.keySet().toArray()[random.nextInt(destinations.size())];
+                String cargoType = (String) cargoTypes.keySet().toArray()[random.nextInt(cargoTypes.size())];
+                int cargoQuantity = random.nextInt(10);
+                double cargoWeight = 100 + random.nextInt(2000);
+
+                Request request = new Request(id, destination, cargoType, cargoQuantity, cargoWeight, 0, 0);
+                newRequests.add(request);
+
+            }
+
+            return newRequests;
+
+        } catch (RequestsGenerationException e)
         {
-            int id = lastId + 1;
-
-            String destination = (String) destinations.keySet().toArray()[random.nextInt(destinations.size())];
-            String cargoType = (String) cargoTypes.keySet().toArray()[random.nextInt(cargoTypes.size())];
-            int cargoQuantity = random.nextInt(10);
-            double cargoWeight = 100 + random.nextInt(2000);
-
-            Request request = new Request(id, destination, cargoType, cargoQuantity, cargoWeight, 0, 0);
-            newRequests.add(request);
+            logMessage(e.getMessage());
         }
 
         return newRequests;
     }
-    private void processTrips(List<Trip> trips)
-    {
-        for (int i = 0; i < trips.size(); i++)
-        {
-            processTrip(trips.get(i));
-        }
-    }
-    private  void processTrip(Trip trip)
-    {
-        boolean result = trip.checkStatus();
-
-        if(!result)
-            return;
-
-        if(trip.getTripStatus().equals("In Progress"))
-        {
-            int compareResult = trip.getEndDate().compareTo(Timestamp.valueOf(clock));
-            if(compareResult <= 0)
-            {
-                trip.completeTrip("Completed");
-            }
-        }
-    }
-    private void processRequests(List<Request> requests)
-    {
+    // Methods for processing new daily requests //
+    private void processRequests(List<Request> requests) throws Exception {
         newTrips.clear();
-        try {
 
-            // Building SQL Query
-            String sql = "INSERT INTO requests (request_id, destination, cargo_type, cargo_quantity, driver_id, vehicle_id, cargo_weight) VALUES ";
-            // SQL Query values
-            String insertValues = "";
-
-
-            // Processing requests
-            for (int i = 0; i < requests.size(); i++)
-                insertValues +=  renderRequest(requests.get(i));
+        // Building SQL Query
+        String sql = "INSERT INTO requests (request_id, destination, cargo_type, cargo_quantity, driver_id, vehicle_id, cargo_weight) VALUES ";
+        // SQL Query values
+        StringBuilder insertValues = new StringBuilder();
 
 
-
-            // If all requests was invalid we aren't going to declare it in database
-            if (insertValues.isEmpty()) {
-
-                System.out.println("---------------------------------");
-                System.out.println("Nothing to declare in database.");
-
-                return;
-            }
-
-            // Adding insert data to sql query
-            sql += insertValues;
-            // Correction of sql query
-            sql = sql.substring(0, sql.length() - 1);
-
-            // Executing
-            DatabaseService.executeSQL(sql);
-            DatabaseService.close();
+        // Processing requests
+        for (Request request : requests) insertValues.append(processRequest(request));
 
 
-            // Building another query to `trips` table
-            String _sql = "INSERT INTO trips (trip_id, request_id, start_date, end_date, total_payment, status) VALUES ";
+        // If all requests was invalid we aren't going to declare it in database
+        if (insertValues.length() == 0) {
 
+            System.out.println("---------------------------------");
+            System.out.println("Nothing to declare in database.");
 
-for (int i =0; i< this.newTrips.size(); i++) {
-    Trip newTrip = this.newTrips.get(i);
-    _sql += "(" + newTrip.getTripId() + ", "
-            + newTrip.getRequestId() + ", '"
-            + newTrip.getStartDate() + "', '"
-            + newTrip.getEndDate() + "', "
-            + newTrip.getTotalPayment() + ", '"
-            + newTrip.getTripStatus()
-            + "'),";
-}
-            _sql = _sql.substring(0, _sql.length() - 1);
-            DatabaseService.executeSQL(_sql);
-
-
-        } catch (Exception e)
-        {
-            System.out.println(e.getMessage());
+            return;
         }
+
+        // Adding insert data to sql query
+        sql += insertValues;
+        // Correction of sql query
+        sql = sql.substring(0, sql.length() - 1);
+
+        // Executing
+        DatabaseService.executeSQL(sql);
+
+
+        // Building another query to `trips` table
+        StringBuilder _sql = new StringBuilder("INSERT INTO trips (trip_id, request_id, start_date, end_date, total_payment, status) VALUES ");
+
+
+        for (Trip newTrip : this.newTrips) {
+            if (newTrip == null)
+                throw new Exception("Trip element is empty. Please check database and try again.");
+
+            _sql.append("(").append(newTrip.getTripId()).append(", ").append(newTrip.getRequestId()).append(", '").append(newTrip.getStartDate()).append("', '").append(newTrip.getEndDate()).append("', ").append(newTrip.getTotalPayment()).append(", '").append(newTrip.getTripStatus()).append("'),");
+        }
+        _sql = new StringBuilder(_sql.substring(0, _sql.length() - 1));
+
+        DatabaseService.executeSQL(_sql.toString());
     }
-    private String renderRequest(Request request) {
+    private String processRequest(Request request) {
 
         System.out.println("**************************************");
         System.out.println("Processing request number #"+request.getRequestId() + "...");
@@ -280,7 +254,7 @@ for (int i =0; i< this.newTrips.size(); i++) {
             System.out.println("Trying to find a driver...");
 
             Driver selectedDriver = availableDrivers.stream()
-                    .filter(x -> x.isAvailable())
+                    .filter(Driver::isAvailable)
                     .filter(driver -> driver.getExperience() >= requiredExperience)
                     .findFirst()
                     .orElse(null);
@@ -314,6 +288,8 @@ for (int i =0; i< this.newTrips.size(); i++) {
             newTrip.setDistance(destinationDistance);
 
             selectedVehicle.assignTrip(newTrip);
+
+            logMessage("New trip created: "+ newTrip.toString());
 
             this.trips.add(newTrip);
             this.newTrips.add(newTrip);
@@ -352,224 +328,230 @@ for (int i =0; i< this.newTrips.size(); i++) {
         }
 
     }
+    /// METHODS FOR PROCESSING TRIPS ///
+    private void processTrips(List<Trip> trips)
+    {
+        for (Trip trip : trips) processTrip(trip);
+    }
+    private  void processTrip(Trip trip)
+    {
+        if(trip == null)
+            return;
+
+        boolean result = trip.checkStatus();
+
+        if(!result)
+            return;
+
+        if(trip.getTripStatus().equals("In Progress"))
+        {
+            int compareResult = trip.getEndDate().compareTo(Timestamp.valueOf(clock));
+            if(compareResult <= 0)
+            {
+                trip.completeTrip("Completed");
+            }
+        }
+    }
+
+    /// METHOD TO COMPLETE THE TRIP ///
     public void completeTrip(Trip trip)
     {
-        System.out.println(trip.getTripStatus());
-        DatabaseService.executeSQL("UPDATE trips SET status = '"+trip.getTripStatus()+"' WHERE trip_id = "+trip.getTripId());
-        DatabaseService.close();
-
-        Driver driver = getDriverById(trip.getRequest().getDriverId());
-        Vehicle vehicle = getVehicleById(trip.getRequest().getVehicleId());
-
-
         try {
+
+            DatabaseService.executeSQL("UPDATE trips SET status = '"+trip.getTripStatus()+"' WHERE trip_id = "+trip.getTripId());
+            DatabaseService.close();
+
+            Driver driver = getDriverById(trip.getRequest().getDriverId());
+            Vehicle vehicle = getVehicleById(trip.getRequest().getVehicleId());
+
+
+
             driver.completeRequest(trip);
             vehicle.completeTrip(trip);
-        } catch (TripNotAssignedException e)
+        } catch (Exception e)
         {
-            System.err.println(e.getMessage());
+            logMessage(e.getMessage());
         }
     }
-    private List<Driver> getDrivers() {
-        List<Driver> drivers = new ArrayList<>();
 
-        try {
-            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5437/test-db", "sa", "admin");
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM drivers");
+    /// GETTERS ///
 
-            while (resultSet.next()) {
-                int driverId = resultSet.getInt("driver_id");
-                String name = resultSet.getString("name");
-                int experience = resultSet.getInt("experience");
+    public Driver getDriverById(int id) throws DriverNotAvailableException
+    {
+        for (Driver driver : availableDrivers)
+            if (driver.getDriverId() == id)
+                return driver;
 
-                Driver driver = new Driver(driverId, name, experience);
-                drivers.add(driver);
-            }
+        throw new DriverNotAvailableException("Unable to find a driver with id: " + id);
+    }
+    public Vehicle getVehicleById(int id) throws VehicleNotAvailableException
+    {
+        for (Vehicle vehicle : availableVehicles)
+            if (vehicle.getVehicleId() == id)
+                return vehicle;
 
-            resultSet.close();
-            statement.close();
-            connection.close();
+        throw new VehicleNotAvailableException("Unable to find a vehicle with id: " + id);
+    }
+    public Request getRequestById(int id) throws NoSuchRequestException
+    {
+        for (Request request : requests)
+            if (request.getRequestId() == id)
+                return request;
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        throw new NoSuchRequestException("Unable to find requests with id: "+id);
+    }
+    public Request getRequestByVehicleId(int vehicleId) throws NoSuchRequestException {
+        Request request = this.requests.stream().filter(x -> x.getVehicleId() == vehicleId).findFirst().orElse(null);
 
-        return drivers;
+        if (request == null)
+            throw new NoSuchRequestException("Unable to find request that has vehicle id equals: " + vehicleId);
+
+        return request;
     }
 
-    private List<Vehicle> getVehicles() {
+    public LocalDateTime getClock() { return clock; }
+
+    /// GETTING DATA FROM DATABASE ///
+
+    private List<Request> getRequests() throws SQLException {
+        List<Request> requests = new ArrayList<>();
+
+        ResultSet resultSet = DatabaseService.executeQuerySQL("SELECT * FROM requests");
+
+        if(resultSet == null)
+            throw new SQLException("Unable to get result test in getRequests().");
+
+        while (resultSet.next()) {
+            int requestId = resultSet.getInt("request_id");
+            String destination = resultSet.getString("destination");
+            String cargo_type = resultSet.getString("cargo_type");
+            int cargo_quantity = resultSet.getInt("cargo_quantity");
+            double cargo_weight = resultSet.getDouble("cargo_weight");
+            int driver_id = resultSet.getInt("driver_id");
+            int vehicle_id = resultSet.getInt("vehicle_id");
+
+            Request request = new Request(requestId, destination, cargo_type, cargo_quantity, cargo_weight, driver_id, vehicle_id);
+            requests.add(request);
+        }
+
+        resultSet.close();
+
+        return requests;
+    }
+
+    private List<Trip> getTrips() throws Exception {
+        List<Trip> requests = new ArrayList<>();
+
+        ResultSet resultSet = DatabaseService.executeQuerySQL("SELECT * FROM trips");
+
+        if(resultSet == null)
+            throw new SQLException("Unable to get result test in getTrips().");
+
+        while (resultSet.next()) {
+            int trip_id = resultSet.getInt("trip_id");
+            int request_id = resultSet.getInt("request_id");
+            Timestamp start_date = resultSet.getTimestamp("start_date");
+            Timestamp end_date = resultSet.getTimestamp("end_date");
+            double total_payment = resultSet.getDouble("total_payment");
+            String status = resultSet.getString("status");
+
+            Trip request = new Trip(trip_id, request_id, start_date, end_date, total_payment, status);
+
+
+            int destinationDistance = destinations.getOrDefault(getRequestById(request_id).getDestination(), -1);
+
+            if(destinationDistance == -1)
+                throw new TripNotAssignedException("Invalid destination.");
+
+            request.setDistance(destinationDistance);
+            requests.add(request);
+        }
+
+        resultSet.close();
+
+        return requests;
+    }
+
+    private List<Vehicle> getVehicles() throws SQLException {
         List<Vehicle> vehicles = new ArrayList<>();
 
-        try {
-            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5437/test-db", "sa", "admin");
 
-            Statement statement = connection.createStatement();
+        ResultSet resultSet = DatabaseService.executeQuerySQL("SELECT * FROM vehicles");
 
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM vehicles");
 
-            while (resultSet.next()) {
-                int vehicleId = resultSet.getInt("vehicle_id");
-                int capacity = resultSet.getInt("capacity");
-                boolean isAvailable = resultSet.getBoolean("available");
+        if (resultSet == null)
+            throw new SQLException("Unable to get result test in getTrips().");
 
-                Vehicle vehicle = new Vehicle(vehicleId, capacity, isAvailable);
-                vehicles.add(vehicle);
-            }
+        while (resultSet.next()) {
+            int vehicleId = resultSet.getInt("vehicle_id");
+            int capacity = resultSet.getInt("capacity");
+            boolean isAvailable = resultSet.getBoolean("available");
 
-            resultSet.close();
-            statement.close();
-            connection.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
+            Vehicle vehicle = new Vehicle(vehicleId, capacity, isAvailable);
+            vehicles.add(vehicle);
         }
+
+        resultSet.close();
 
         return vehicles;
     }
 
+    private List<Driver> getDrivers() throws SQLException {
+        List<Driver> drivers = new ArrayList<>();
 
-    public Driver getDriverById(int id)
-    {
-        for (Driver driver : availableDrivers) {
-            if (driver.getDriverId() == id) {
-                return driver;
-            }
-        }
-        return null;
-    }
-    public Vehicle getVehicleById(int id)
-    {
-        for (Vehicle vehicle : availableVehicles) {
-            if (vehicle.getVehicleId() == id) {
-                return vehicle;
-            }
-        }
-        return null;
-    }
-public Request getRequestById(int id)
-    {
-        for (Request request : requests) {
-            if (request.getRequestId() == id) {
-                return request;
-            }
-        }
-        return null;
-    }
-    private List<Trip> getTrips() {
-        List<Trip> requests = new ArrayList<>();
+        ResultSet resultSet = DatabaseService.executeQuerySQL("SELECT * FROM drivers");
 
+
+        if (resultSet == null)
+            throw new SQLException("Unable to get result test in geDrivers().");
+
+        while (resultSet.next()) {
+            int driverId = resultSet.getInt("driver_id");
+            String name = resultSet.getString("name");
+            int experience = resultSet.getInt("experience");
+
+            Driver driver = new Driver(driverId, name, experience);
+            drivers.add(driver);
+        }
+
+        resultSet.close();
+
+
+        return drivers;
+    }
+
+    /// LOGGING ///
+    public void displayTrips()
+    {
         try {
-            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5437/test-db", "sa", "admin");
+            logMessage("------------------------------");
+            logMessage("All trips:");
+            logMessage("------------------------------");
 
-            Statement statement = connection.createStatement();
+            for (Trip trip : this.trips) {
 
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM trips");
-
-            while (resultSet.next()) {
-                int trip_id = resultSet.getInt("trip_id");
-                int request_id = resultSet.getInt("request_id");
-                Timestamp start_date = resultSet.getTimestamp("start_date");
-                Timestamp end_date = resultSet.getTimestamp("end_date");
-                double total_payment = resultSet.getDouble("total_payment");
-                String status = resultSet.getString("status");
-
-                Trip request = new Trip(trip_id, request_id, start_date, end_date, total_payment, status);
+                if (trip == null)
+                    throw new TripNotAssignedException("### Cannot display trip.");
 
 
-                int destinationDistance = destinations.getOrDefault(getRequestById(request_id).getDestination(), -1);
-
-                if(destinationDistance == -1)
-                    throw new TripNotAssignedException("Invalid destination.");
-
-                request.setDistance(destinationDistance);
-                requests.add(request);
+                logMessage("------------------------------");
+                logMessage("Trip #" + trip.getTripId());
+                logMessage("Placed at " + trip.getStartDate());
+                logMessage("Ends at " + trip.getEndDate());
+                logMessage("Total payment:  " + trip.getTotalPayment());
+                logMessage("Status: " + trip.getTripStatus());
             }
-
-            resultSet.close();
-            statement.close();
-            connection.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return requests;
-    }
-    private List<Request> getRequests() {
-        List<Request> requests = new ArrayList<>();
-
-        try {
-            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5437/test-db", "sa", "admin");
-
-            Statement statement = connection.createStatement();
-
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM requests");
-
-            while (resultSet.next()) {
-                int requestId = resultSet.getInt("request_id");
-                String destination = resultSet.getString("destination");
-                String cargo_type = resultSet.getString("cargo_type");
-                int cargo_quantity = resultSet.getInt("cargo_quantity");
-                double cargo_weight = resultSet.getDouble("cargo_weight");
-                int driver_id = resultSet.getInt("driver_id");
-                int vehicle_id = resultSet.getInt("vehicle_id");
-
-                Request request = new Request(requestId, destination, cargo_type, cargo_quantity, cargo_weight, driver_id, vehicle_id);
-                requests.add(request);
-            }
-
-            resultSet.close();
-            statement.close();
-            connection.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return requests;
-    }
-
-    public static Dispatcher getInstance() {
-        if (instance == null) {
-            instance = new Dispatcher();
-        }
-        return instance;
-    }
-    public void startTrip(Trip trip)
-    {
-        System.out.println("Trip started #"+trip.getTripId());
-
-        getVehicleById(getRequestById(trip.getRequestId()).getVehicleId()).startDriving(trip);
-    }
-    public Request getRequestByVehicleId(int vehicleId) throws NoSuchRequestException
-    {
-        Request request = null;
-        try {
-            request = this.requests.stream().filter(x -> x.getVehicleId() == vehicleId).findFirst().orElse(null);
-
-            if(request == null)
-                throw new NoSuchRequestException("No requests was found.");
-        } catch (NoSuchRequestException e)
+        } catch (TripNotAssignedException e)
         {
-            System.err.println(e.getMessage());
+            logMessage(e.getMessage());
         }
 
-        return request;
     }
-    public LocalDateTime getClock()
+    public static void logMessage(String message)
     {
-        return clock;
+        LOGGER.info(message);
+        System.out.println(message);
     }
-    public void startTripsAsync(List<Trip> trips) {
-        for (Trip trip : trips) {
-            Thread tripThread = new Thread(() -> {
-                startTrip(trip);
-            });
-            tripThread.start();
-        }
-    }
-    public static int generateUniquePositiveNumber() {
-        Instant now = Instant.now();
-        long timestamp = now.toEpochMilli(); // Get the current timestamp in milliseconds
-        return (int) (timestamp & 0x7FFFFFFF); // Use the lower 31 bits to ensure a positive number
-    }
+
 }
 

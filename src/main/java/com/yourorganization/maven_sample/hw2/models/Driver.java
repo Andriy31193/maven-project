@@ -4,6 +4,8 @@ import java.sql.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+import com.yourorganization.maven_sample.hw2.exceptions.NoSuchRequestException;
+import com.yourorganization.maven_sample.hw2.exceptions.RequestsGenerationException;
 import com.yourorganization.maven_sample.hw2.exceptions.TripNotAssignedException;
 import org.apache.log4j.Logger;
 
@@ -48,24 +50,24 @@ public class Driver {
         return isAvailable;
     }
 
-    public void completeRequest(Trip trip) throws TripNotAssignedException {
+    public void completeRequest(Trip trip) {
 
-        int requestId = trip.getRequestId();
-        if (Dispatcher.getInstance().getRequestById(requestId).getDriverId() != driverId) {
-            throw new TripNotAssignedException("Request is not assigned to this driver.");
-        }
+        try {
+            int requestId = trip.getRequestId();
+            if (Dispatcher.getInstance().getRequestById(requestId).getDriverId() != driverId) {
+                throw new TripNotAssignedException("Request is not assigned to this driver.");
+            }
             double tripPayment = calculateTripPayment(requestId);
             totalEarnings += tripPayment;
             setAvailable(true);
 
-            if(trip.getTripStatus().equals("Broken"))
-            {
+            if (trip.getTripStatus().equals("Broken")) {
 
                 System.out.println("Driver " + getName() + " has not completed the request (Request ID: " + requestId +
                         "). Due to vehicle issues. Total earnings: $" + totalEarnings);
 
                 LOGGER.info("Driver " + getName() + " has not completed the request (Request ID: " + requestId +
-                "). Due to vehicle issues. Total earnings: $" + totalEarnings);
+                        "). Due to vehicle issues. Total earnings: $" + totalEarnings);
 
                 requestRepair(Dispatcher.getInstance().getVehicleById(trip.getRequest().getVehicleId()));
 
@@ -77,17 +79,32 @@ public class Driver {
 
             LOGGER.info("Driver " + getName() + " has completed the request (Request ID: " + requestId +
                     "). Total earnings: $" + totalEarnings);
+        } catch (Exception e)
+        {
+            Dispatcher.logMessage("### "+e.getMessage());
+        }
     }
 
     private double calculateTripPayment(int requestId) {
-        return 100.0 + (experience * 100)+(Dispatcher.getInstance().getRequestById(requestId).getDistance());
+        try {
+            return 100.0 + (experience * 100) + (Dispatcher.getInstance().getRequestById(requestId).getDistance());
+        } catch (Exception e)
+        {
+            Dispatcher.logMessage("### "+e.getMessage());
+        }
+        return 0.0;
     }
     public void requestRepair(Vehicle vehicle) {
 
 
 
         try {
-            int requestId = Dispatcher.getInstance().getRequestByVehicleId(vehicle.getVehicleId()).getRequestId();
+            Request request = Dispatcher.getInstance().getRequestByVehicleId(vehicle.getVehicleId());
+
+            if (request == null)
+                throw new NoSuchRequestException("Unable to find request by vehicle id: "+vehicle.getVehicleId());
+
+            int requestId = request.getRequestId();
             LOGGER.info("Driver " + getName() + " has requested a vehicle repair.");
 
 
@@ -105,8 +122,11 @@ public class Driver {
             DatabaseService.executeSQL(insertQuery);
             DatabaseService.close();
 
+
+            vehicle.setAvailable(false);
+
         } catch (Exception e) {
-            System.err.println(e.getMessage());
+            Dispatcher.logMessage(e.getMessage());
         }
     }
     @Override

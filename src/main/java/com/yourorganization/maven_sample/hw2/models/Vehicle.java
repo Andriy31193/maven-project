@@ -24,53 +24,6 @@ public class Vehicle {
         this.vehicleId = vehicleId;
         this.capacity = capacity;
         this.isAvailable = available;
-        LOGGER.info("123");
-    }
-
-    public void startDriving(Trip trip)
-    {
-        double distance = trip.getDistance();
-        Random random = new Random();
-
-        try {
-            while (currentDistance < distance) {
-
-                double randomSpeed = rangeMin + (rangeMax - rangeMin) * random.nextDouble();
-
-                // Emulating case that car has some issues and needs repair
-                if(randomSpeed >= (rangeMax - 1))
-                    break;
-
-                currentDistance += randomSpeed;
-
-                if(currentDistance > distance)
-                    currentDistance = distance;
-
-
-
-
-                Thread.sleep(500);
-
-                System.out.println("#"+vehicleId+" Current distance: " + round(currentDistance, 2)+"/"+distance);
-            }
-
-            if(currentDistance >= distance) {
-                Dispatcher.getInstance().completeTrip(trip);
-            } else {
-                try {
-                    trip.getCurrentDriver().vehicleBrokeDown(this);
-                } catch (Exception e)
-                {
-                    System.err.println(e.getMessage());
-                }
-            }
-
-
-
-
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
     }
     public static double round(double value, int places) {
         if (places < 0) throw new IllegalArgumentException();
@@ -121,7 +74,9 @@ public class Vehicle {
             throw new TripNotAssignedException("Trip is not assigned to this vehicle.");
         }
 
-        setAvailable(true);
+        if(trip.getTripStatus().equals("Completed"))
+            setAvailable(true);
+
         LOGGER.info("Vehicle " + vehicleId + " has completed the trip (Trip ID: " + trip.getTripId() + ").");
     }
 

@@ -34,18 +34,16 @@ public class DatabaseService {
 
         return null;
     }
-    public static boolean executeSQL(String query)
+    public static void executeSQL(String query)
     {
         try {
             if(connection == null || statement == null)
                 connect();
 
-            return statement.execute(query);
+            statement.execute(query);
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-        return false;
     }
 }

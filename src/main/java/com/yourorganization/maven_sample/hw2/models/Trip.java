@@ -1,6 +1,9 @@
 package com.yourorganization.maven_sample.hw2.models;
 
+import com.yourorganization.maven_sample.hw2.exceptions.DriverNotAvailableException;
+import com.yourorganization.maven_sample.hw2.exceptions.NoSuchRequestException;
 import org.apache.log4j.Logger;
+import org.junit.platform.commons.function.Try;
 
 import java.sql.Time;
 import java.sql.Timestamp;
@@ -33,18 +36,6 @@ public class Trip {
     public Trip(int tripId, int requestId, Timestamp startDate, Timestamp endDate, double totalPayment, String status) {
         init(tripId,requestId,startDate, endDate, totalPayment, status);
     }
-
-    private void init(int tripId, int requestId, Timestamp startDate, Timestamp endDate, double totalPayment, String status)
-    {
-        this.tripId = tripId;
-        this.requestId = requestId;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.totalPayment = totalPayment;
-        this.tripStatus = status;
-
-        System.out.println("New trip placed: "+ this.toString());
-    }
     public Trip(int requestId) {
         LocalDateTime requestDate = LocalDateTime.now();
 
@@ -59,32 +50,47 @@ public class Trip {
 
         init(requestId+requestDate.getSecond()+random.nextInt(1000), requestId, sDate, sDate, 0, "In Progress");
     }
-    public double getCargoWeight() { return 0; }
-    public int getTripId() {
-        return tripId;
-    }
-    public Request getRequest() { return Dispatcher.getInstance().getRequestById(requestId); }
 
-    public int getRequestId() {
-        return requestId;
-    }
-
-    public Timestamp getStartDate() {
-        return startDate;
-    }
-
-    public Timestamp getEndDate() {
-        return endDate;
-    }
-    public void setStartDate(Timestamp endDate) {
-        this.startDate = endDate;
-    }
-    public void setEndDate(Timestamp endDate) {
+    private void init(int tripId, int requestId, Timestamp startDate, Timestamp endDate, double totalPayment, String status)
+    {
+        this.tripId = tripId;
+        this.requestId = requestId;
+        this.startDate = startDate;
         this.endDate = endDate;
+        this.totalPayment = totalPayment;
+        this.tripStatus = status;
+
+        Dispatcher.logMessage("Trip #" + tripId + this.toString());
     }
+
+    public double calculateTripDuration() {
+        if (endDate != null) {
+            long startTime = startDate.getTime();
+            long endTime = endDate.getTime();
+            long durationMillis = endTime - startTime;
+            return durationMillis / (1000.0 * 60 * 60);
+        } else return 0;
+
+    }
+
+    public void completeTrip(String status) {
+
+        this.totalPayment += calculateTripDuration();
+        //this.endDate = new Date();
+        this.tripStatus = status;
+
+        Dispatcher.getInstance().completeTrip(this);
+
+    }
+
     public boolean checkStatus() {
 
         try {
+
+            if(getTripStatus().equals("Broken")) {
+                return false;
+            }
+
             Random random = new Random();
 
             int randValue = random.nextInt(10);
@@ -92,9 +98,7 @@ public class Trip {
             // Emulation of car broke down situation
             if (randValue <= 1) {
 
-                String errorMessage = "Trip cannot be completed due to vehicle issues.";
-                LOGGER.info(errorMessage);
-                System.out.println(errorMessage);
+                Dispatcher.logMessage("Trip cannot be completed due to vehicle issues.");
                 this.completeTrip("Broken");
 
 
@@ -104,33 +108,53 @@ public class Trip {
 
             return true;
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            Dispatcher.logMessage(e.getMessage());
         }
 
         return false;
     }
 
+    /// SETTERS ///
 
-    public double getTotalPayment() {
-        return totalPayment;
-    }
-
-    public void setTotalPayment(double totalPayment) {
-        this.totalPayment = totalPayment;
-    }
-    public Driver getCurrentDriver()
-    {
-        return Dispatcher.getInstance().getDriverById(getRequest().getDriverId());
-    }
-    public double getDistance() { return this.distance; }
     public void setDistance(int value) { distance = value; }
-    public String getTripStatus() {
-        return tripStatus;
-    }
+    public void setTripStatus(String tripStatus) { this.tripStatus = tripStatus; }
+    public void setTotalPayment(double totalPayment) { this.totalPayment = totalPayment; }
 
-    public void setTripStatus(String tripStatus) {
-        this.tripStatus = tripStatus;
+    /// GETTERS ///
+
+    public Driver getCurrentDriver() {
+        try {
+            Dispatcher.getInstance().getDriverById(getRequest().getDriverId());
+
+            return Dispatcher.getInstance().getDriverById(getRequest().getDriverId());
+        } catch (Exception e)
+        {
+            Dispatcher.logMessage(e.getMessage());
+
+            return null;
+        }
     }
+    public Request getRequest() {
+        try {
+            return Dispatcher.getInstance().getRequestById(requestId);
+        } catch (NoSuchRequestException e)
+        {
+            Dispatcher.logMessage("### " + e.getMessage());
+
+            return null;
+        }
+    }
+    public double getTotalPayment() { return totalPayment; }
+    public int getRequestId() { return requestId; }
+    public Timestamp getStartDate() { return startDate; }
+    public double getDistance() { return this.distance; }
+    public String getTripStatus() { return tripStatus; }
+    public Timestamp getEndDate() { return endDate; }
+    public void setStartDate(Timestamp endDate) { this.startDate = endDate; }
+    public void setEndDate(Timestamp endDate) { this.endDate = endDate; }
+    public double getCargoWeight() { return 0; }
+    public int getTripId() { return tripId; }
+
 
     @Override
     public String toString() {
@@ -142,28 +166,6 @@ public class Trip {
                 ", totalPayment=" + totalPayment +
                 ", tripStatus='" + tripStatus + '\''+
                 ']';
-    }
-
-    public double calculateTripDuration() {
-        if (endDate != null) {
-            long startTime = startDate.getTime();
-            long endTime = endDate.getTime();
-            long durationMillis = endTime - startTime;
-            return durationMillis / (1000.0 * 60 * 60);
-        } else {
-            // Handle the case where the trip hasn't ended yet
-            return 0;
-        }
-    }
-
-    public void completeTrip(String status) {
-
-        this.totalPayment += calculateTripDuration();
-        //this.endDate = new Date();
-        this.tripStatus = status;
-
-        Dispatcher.getInstance().completeTrip(this);
-
     }
 }
 

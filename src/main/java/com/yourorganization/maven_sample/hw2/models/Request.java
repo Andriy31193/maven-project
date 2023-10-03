@@ -1,12 +1,11 @@
 package com.yourorganization.maven_sample.hw2.models;
 
 public class Request {
-    private int requestId;
-    private String destination;
-    private String cargoType;
-    private int cargoQuantity;
-    private double cargoWeight;
-    private int requiredExperience;
+    private final int requestId;
+    private final String destination;
+    private final String cargoType;
+    private final int cargoQuantity;
+    private final double cargoWeight;
     private int driver_id;
     private int vehicle_id;
     private double distance;
@@ -38,14 +37,7 @@ public class Request {
         return cargoQuantity;
     }
 
-    public int getRequiredExperience() {
-        return requiredExperience;
-    }
-    public void setRequiredExperience(int value) {
-         requiredExperience = value;
-    }
     public double getCargoWeight() { return cargoWeight;}
-    public void setCargoWeight(double cargoWeight) { this.cargoWeight = cargoWeight;}
     public void setDriverId(int value) { this.driver_id = value; }
 
     public void setVehicleId(int value) { this.vehicle_id = value; }
