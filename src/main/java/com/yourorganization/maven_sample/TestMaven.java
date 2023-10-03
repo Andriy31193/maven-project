@@ -3,10 +3,15 @@ package com.yourorganization.maven_sample;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Multimap;
+import com.yourorganization.maven_sample.hw2.models.Dispatcher;
+import com.yourorganization.maven_sample.hw2.models.Request;
+import com.yourorganization.maven_sample.hw2.models.Vehicle;
 
+import java.io.Console;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
+import java.time.Instant;
 import java.util.List;
 import java.util.Objects;
 import java.util.Properties;
@@ -139,5 +144,12 @@ public class TestMaven {
 //        } catch (SQLException | InterruptedException e) {
 //            e.printStackTrace();
 //        }
+
+
+        Dispatcher dispatcher = new Dispatcher();
+        dispatcher.start();
     }
+
+
+
 }
