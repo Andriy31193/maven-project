@@ -41,6 +41,17 @@ public class Dispatcher {
         if (instance == null)
             instance = this;
 
+        try {
+
+            this.requests = this.getRequests();
+            this.availableDrivers = this.getDrivers();
+            this.availableVehicles = this.getVehicles();
+
+        } catch (Exception e)
+        {
+            logMessage("### "+e.getMessage());
+        }
+
         destinations.put("New York City", 250);
         destinations.put("Los Angeles", 400);
         destinations.put("Chicago", 300);
@@ -169,7 +180,7 @@ public class Dispatcher {
         return newRequests;
     }
     // Methods for processing new daily requests //
-    private void processRequests(List<Request> requests) throws Exception {
+    public void processRequests(List<Request> requests) throws Exception {
         newTrips.clear();
 
         // Building SQL Query
@@ -216,8 +227,14 @@ public class Dispatcher {
     }
     private String processRequest(Request request) {
 
-        System.out.println("**************************************");
-        System.out.println("Processing request number #"+request.getRequestId() + "...");
+        logMessage("**************************************");
+        logMessage("Processing request number #"+request.getRequestId() + "...");
+
+        if(isRequestExists(this.requests, request.getRequestId()))
+        {
+            logMessage("Request number #"+request.getRequestId()+" is already proceeded");
+            return "";
+        }
 
         try {
 
@@ -408,7 +425,12 @@ public class Dispatcher {
 
         return request;
     }
-
+    public boolean isRequestExists(final List<Request> list, final int id){
+        return list.stream().anyMatch(o -> o.getRequestId() == id);
+    }
+    public boolean isTripExists(final List<Trip> list, final int id){
+        return list.stream().anyMatch(o -> o.getTripId() == id);
+    }
     public LocalDateTime getClock() { return clock; }
 
     /// GETTING DATA FROM DATABASE ///
@@ -472,7 +494,7 @@ public class Dispatcher {
         return requests;
     }
 
-    private List<Vehicle> getVehicles() throws SQLException {
+    public List<Vehicle> getVehicles() throws SQLException {
         List<Vehicle> vehicles = new ArrayList<>();
 
 

@@ -889,3 +889,12 @@
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Ends at 2023-10-07 00:00:00.0
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  502.0
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
+2023-10-04 22:00:47,673 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #1922 Trip [tripId=1922, requestId=999, startDate=2023-10-04 22:00:47.0, endDate=2023-10-04 22:00:47.0, totalPayment=0.0, tripStatus='In Progress']
+2023-10-04 22:00:47,679 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has been assigned a new trip (Trip ID: 1922).
+2023-10-04 22:00:47,679 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New trip created:  Trip [tripId=1922, requestId=999, startDate=2023-10-04 22:00:47.0, endDate=2023-10-06 22:00:47.0, totalPayment=368.0, tripStatus='In Progress']
+2023-10-04 22:06:13,327 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #1755 Trip [tripId=1755, requestId=999, startDate=2023-10-04 22:06:13.0, endDate=2023-10-04 22:06:13.0, totalPayment=0.0, tripStatus='In Progress']
+2023-10-04 22:06:13,332 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 2 has been assigned a new trip (Trip ID: 1755).
+2023-10-04 22:06:13,332 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New trip created:  Trip [tripId=1755, requestId=999, startDate=2023-10-04 22:06:13.0, endDate=2023-10-09 22:06:13.0, totalPayment=290.0, tripStatus='In Progress']
+2023-10-04 22:22:45,403 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #1697 Trip [tripId=1697, requestId=999, startDate=2023-10-04 22:22:45.0, endDate=2023-10-04 22:22:45.0, totalPayment=0.0, tripStatus='In Progress']
+2023-10-04 22:22:45,434 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 0 has been assigned a new trip (Trip ID: 1697).
+2023-10-04 22:22:45,435 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New trip created:  Trip [tripId=1697, requestId=999, startDate=2023-10-04 22:22:44.0, endDate=2023-10-09 22:22:44.0, totalPayment=368.0, tripStatus='In Progress']
