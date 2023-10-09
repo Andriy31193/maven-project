@@ -1,15 +1,15 @@
 2023-10-03 17:56:33,420 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-03
-2023-10-03 17:56:33,842 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 2 requests today!
+2023-10-03 17:56:33,842 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 2 requestEntities today!
 2023-10-03 17:56:33,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-03 17:56:33.0, totalPayment=0.0, tripStatus='In Progress']
-2023-10-03 17:56:33,864 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has been assigned a new trip (Trip ID: 119).
-2023-10-03 17:56:33,864 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New trip created:  Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 17:56:33.0, totalPayment=206.0, tripStatus='In Progress']
+2023-10-03 17:56:33,864 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has been assigned a new tripEntity (Trip ID: 119).
+2023-10-03 17:56:33,864 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New tripEntity created:  Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 17:56:33.0, totalPayment=206.0, tripStatus='In Progress']
 2023-10-03 17:56:33,872 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-03 17:56:33.0, totalPayment=0.0, tripStatus='In Progress']
-2023-10-03 17:56:33,876 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 2 has been assigned a new trip (Trip ID: 713).
-2023-10-03 17:56:33,876 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New trip created:  Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 17:56:33.0, totalPayment=321.0, tripStatus='In Progress']
+2023-10-03 17:56:33,876 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 2 has been assigned a new tripEntity (Trip ID: 713).
+2023-10-03 17:56:33,876 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New tripEntity created:  Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 17:56:33.0, totalPayment=321.0, tripStatus='In Progress']
 2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='In Progress']
 2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='In Progress']
 2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -17,7 +17,7 @@
 2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: In Progress
 2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -25,15 +25,15 @@
 2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  321.0
 2023-10-03 17:56:33,895 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: In Progress
 2023-10-03 17:57:57,353 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-04
-2023-10-03 17:57:57,360 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 0 requests today!
+2023-10-03 17:57:57,360 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 0 requestEntities today!
 2023-10-03 17:57:57,362 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='In Progress']
 2023-10-03 17:57:57,362 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='In Progress']
-2023-10-03 17:57:57,362 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:57:57,398 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the request (Request ID: 2). Due to vehicle issues. Total earnings: $600.0
-2023-10-03 17:57:57,398 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicle repair.
-2023-10-03 17:57:57,406 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 2 has completed the trip (Trip ID: 713).
+2023-10-03 17:57:57,362 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:57:57,398 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the requestEntity (Request ID: 2). Due to vehicleEntity issues. Total earnings: $600.0
+2023-10-03 17:57:57,398 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicleEntity repair.
+2023-10-03 17:57:57,406 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 2 has completed the tripEntity (Trip ID: 713).
 2023-10-03 17:57:57,406 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:57:57,406 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:57:57,406 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:57:57,406 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:57:57,406 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:57:57,406 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -41,7 +41,7 @@
 2023-10-03 17:57:57,406 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:57:57,406 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: In Progress
 2023-10-03 17:57:57,406 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:57:57,407 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:57:57,407 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:57:57,407 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:57:57,407 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:57:57,407 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -49,17 +49,17 @@
 2023-10-03 17:57:57,407 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  327.0575
 2023-10-03 17:57:57,407 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:57:58,111 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-05
-2023-10-03 17:57:58,117 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 0 requests today!
+2023-10-03 17:57:58,117 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 0 requestEntities today!
 2023-10-03 17:57:58,119 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='In Progress']
 2023-10-03 17:57:58,119 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='Broken']
-2023-10-03 17:57:58,155 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has completed the request (Request ID: 1). Total earnings: $1100.0
-2023-10-03 17:57:58,158 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has completed the trip (Trip ID: 119).
-2023-10-03 17:57:58,158 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:57:58,164 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the request (Request ID: 2). Due to vehicle issues. Total earnings: $600.0
-2023-10-03 17:57:58,164 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicle repair.
-2023-10-03 17:57:58,169 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 2 has completed the trip (Trip ID: 713).
+2023-10-03 17:57:58,155 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has completed the requestEntity (Request ID: 1). Total earnings: $1100.0
+2023-10-03 17:57:58,158 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has completed the tripEntity (Trip ID: 119).
+2023-10-03 17:57:58,158 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:57:58,164 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the requestEntity (Request ID: 2). Due to vehicleEntity issues. Total earnings: $600.0
+2023-10-03 17:57:58,164 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicleEntity repair.
+2023-10-03 17:57:58,169 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 2 has completed the tripEntity (Trip ID: 713).
 2023-10-03 17:57:58,169 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:57:58,169 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:57:58,169 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:57:58,169 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:57:58,169 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:57:58,169 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -67,7 +67,7 @@
 2023-10-03 17:57:58,169 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  236.0575
 2023-10-03 17:57:58,170 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Completed
 2023-10-03 17:57:58,170 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:57:58,170 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:57:58,170 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:57:58,170 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:57:58,170 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:57:58,170 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -75,15 +75,15 @@
 2023-10-03 17:57:58,170 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  327.0575
 2023-10-03 17:57:58,170 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:57:58,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-06
-2023-10-03 17:57:58,859 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 2 requests today!
+2023-10-03 17:57:58,859 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 2 requestEntities today!
 2023-10-03 17:57:58,860 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918 Trip [tripId=918, requestId=3, startDate=2023-10-03 17:57:58.0, endDate=2023-10-03 17:57:58.0, totalPayment=0.0, tripStatus='In Progress']
-2023-10-03 17:57:58,892 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has been assigned a new trip (Trip ID: 918).
-2023-10-03 17:57:58,892 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New trip created:  Trip [tripId=918, requestId=3, startDate=2023-10-06 17:56:33.0, endDate=2023-10-07 17:56:33.0, totalPayment=502.0, tripStatus='In Progress']
+2023-10-03 17:57:58,892 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has been assigned a new tripEntity (Trip ID: 918).
+2023-10-03 17:57:58,892 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New tripEntity created:  Trip [tripId=918, requestId=3, startDate=2023-10-06 17:56:33.0, endDate=2023-10-07 17:56:33.0, totalPayment=502.0, tripStatus='In Progress']
 2023-10-03 17:57:58,906 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='Completed']
 2023-10-03 17:57:58,906 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='Broken']
 2023-10-03 17:57:58,906 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918 Trip [tripId=918, requestId=3, startDate=2023-10-06 17:56:33.0, endDate=2023-10-07 00:00:00.0, totalPayment=502.0, tripStatus='In Progress']
 2023-10-03 17:57:58,906 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -91,7 +91,7 @@
 2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Completed
 2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -99,7 +99,7 @@
 2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  321.0
 2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:57:58,907 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918
 2023-10-03 17:57:58,908 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-06 17:56:33.0
@@ -107,18 +107,18 @@
 2023-10-03 17:57:58,908 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  502.0
 2023-10-03 17:57:58,908 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: In Progress
 2023-10-03 17:57:59,700 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-07
-2023-10-03 17:57:59,706 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 0 requests today!
+2023-10-03 17:57:59,706 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 0 requestEntities today!
 2023-10-03 17:57:59,708 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='Completed']
 2023-10-03 17:57:59,708 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='Broken']
 2023-10-03 17:57:59,708 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918 Trip [tripId=918, requestId=3, startDate=2023-10-06 17:56:33.0, endDate=2023-10-07 00:00:00.0, totalPayment=502.0, tripStatus='In Progress']
-2023-10-03 17:57:59,708 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:57:59,714 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has not completed the request (Request ID: 1). Due to vehicle issues. Total earnings: $1100.0
-2023-10-03 17:57:59,715 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has requested a vehicle repair.
-2023-10-03 17:57:59,721 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has completed the trip (Trip ID: 119).
-2023-10-03 17:57:59,725 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has completed the request (Request ID: 3). Total earnings: $2200.0
-2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has completed the trip (Trip ID: 918).
+2023-10-03 17:57:59,708 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:57:59,714 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has not completed the requestEntity (Request ID: 1). Due to vehicleEntity issues. Total earnings: $1100.0
+2023-10-03 17:57:59,715 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has requested a vehicleEntity repair.
+2023-10-03 17:57:59,721 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has completed the tripEntity (Trip ID: 119).
+2023-10-03 17:57:59,725 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has completed the requestEntity (Request ID: 3). Total earnings: $2200.0
+2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has completed the tripEntity (Trip ID: 918).
 2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -126,7 +126,7 @@
 2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  236.0575
 2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -134,7 +134,7 @@
 2023-10-03 17:57:59,728 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  321.0
 2023-10-03 17:57:59,729 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:57:59,729 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:57:59,729 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:57:59,729 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:57:59,729 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:57:59,729 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918
 2023-10-03 17:57:59,729 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-06 17:56:33.0
@@ -142,16 +142,16 @@
 2023-10-03 17:57:59,729 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  508.0575
 2023-10-03 17:57:59,729 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Completed
 2023-10-03 17:58:00,614 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-08
-2023-10-03 17:58:00,629 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 2 requests today!
+2023-10-03 17:58:00,629 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 2 requestEntities today!
 2023-10-03 17:58:00,630 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249 Trip [tripId=249, requestId=4, startDate=2023-10-03 17:58:00.0, endDate=2023-10-03 17:58:00.0, totalPayment=0.0, tripStatus='In Progress']
-2023-10-03 17:58:00,661 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has been assigned a new trip (Trip ID: 249).
-2023-10-03 17:58:00,661 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New trip created:  Trip [tripId=249, requestId=4, startDate=2023-10-08 17:56:33.0, endDate=2023-10-10 17:56:33.0, totalPayment=138.0, tripStatus='In Progress']
+2023-10-03 17:58:00,661 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has been assigned a new tripEntity (Trip ID: 249).
+2023-10-03 17:58:00,661 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New tripEntity created:  Trip [tripId=249, requestId=4, startDate=2023-10-08 17:56:33.0, endDate=2023-10-10 17:56:33.0, totalPayment=138.0, tripStatus='In Progress']
 2023-10-03 17:58:00,675 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='Broken']
 2023-10-03 17:58:00,675 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='Broken']
 2023-10-03 17:58:00,676 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918 Trip [tripId=918, requestId=3, startDate=2023-10-06 17:56:33.0, endDate=2023-10-07 00:00:00.0, totalPayment=502.0, tripStatus='Completed']
 2023-10-03 17:58:00,676 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249 Trip [tripId=249, requestId=4, startDate=2023-10-08 17:56:33.0, endDate=2023-10-10 00:00:00.0, totalPayment=138.0, tripStatus='In Progress']
 2023-10-03 17:58:00,676 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:00,676 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:00,676 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:00,676 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:00,676 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:58:00,676 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -159,7 +159,7 @@
 2023-10-03 17:58:00,676 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  321.0
 2023-10-03 17:58:00,676 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:00,676 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:00,676 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:00,676 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:00,676 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:00,677 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:58:00,677 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -167,7 +167,7 @@
 2023-10-03 17:58:00,677 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:58:00,677 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:00,677 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918
 2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-06 17:56:33.0
@@ -175,7 +175,7 @@
 2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  502.0
 2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Completed
 2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249
 2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-08 17:56:33.0
@@ -183,13 +183,13 @@
 2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  138.0
 2023-10-03 17:58:00,678 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: In Progress
 2023-10-03 17:58:01,431 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-09
-2023-10-03 17:58:01,437 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 1 requests today!
+2023-10-03 17:58:01,437 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 1 requestEntities today!
 2023-10-03 17:58:01,439 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='Broken']
 2023-10-03 17:58:01,439 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='Broken']
 2023-10-03 17:58:01,439 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918 Trip [tripId=918, requestId=3, startDate=2023-10-06 17:56:33.0, endDate=2023-10-07 00:00:00.0, totalPayment=502.0, tripStatus='Completed']
 2023-10-03 17:58:01,439 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249 Trip [tripId=249, requestId=4, startDate=2023-10-08 17:56:33.0, endDate=2023-10-10 00:00:00.0, totalPayment=138.0, tripStatus='In Progress']
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -197,7 +197,7 @@
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  321.0
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -205,7 +205,7 @@
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-06 17:56:33.0
@@ -213,7 +213,7 @@
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  502.0
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Completed
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249
 2023-10-03 17:58:01,440 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-08 17:56:33.0
@@ -221,19 +221,19 @@
 2023-10-03 17:58:01,441 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  138.0
 2023-10-03 17:58:01,441 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: In Progress
 2023-10-03 17:58:02,218 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-10
-2023-10-03 17:58:02,224 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 0 requests today!
+2023-10-03 17:58:02,224 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 0 requestEntities today!
 2023-10-03 17:58:02,226 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='Broken']
 2023-10-03 17:58:02,226 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='Broken']
 2023-10-03 17:58:02,226 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918 Trip [tripId=918, requestId=3, startDate=2023-10-06 17:56:33.0, endDate=2023-10-07 00:00:00.0, totalPayment=502.0, tripStatus='Completed']
 2023-10-03 17:58:02,226 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249 Trip [tripId=249, requestId=4, startDate=2023-10-08 17:56:33.0, endDate=2023-10-10 00:00:00.0, totalPayment=138.0, tripStatus='In Progress']
-2023-10-03 17:58:02,226 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:02,262 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the request (Request ID: 2). Due to vehicle issues. Total earnings: $600.0
-2023-10-03 17:58:02,262 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicle repair.
-2023-10-03 17:58:02,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 2 has completed the trip (Trip ID: 713).
-2023-10-03 17:58:02,271 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has completed the request (Request ID: 4). Total earnings: $1200.0
-2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has completed the trip (Trip ID: 249).
+2023-10-03 17:58:02,226 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:02,262 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the requestEntity (Request ID: 2). Due to vehicleEntity issues. Total earnings: $600.0
+2023-10-03 17:58:02,262 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicleEntity repair.
+2023-10-03 17:58:02,267 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 2 has completed the tripEntity (Trip ID: 713).
+2023-10-03 17:58:02,271 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has completed the requestEntity (Request ID: 4). Total earnings: $1200.0
+2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has completed the tripEntity (Trip ID: 249).
 2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -241,7 +241,7 @@
 2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  327.0575
 2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -249,7 +249,7 @@
 2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:02,274 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:02,275 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:02,275 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918
 2023-10-03 17:58:02,275 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-06 17:56:33.0
@@ -257,7 +257,7 @@
 2023-10-03 17:58:02,275 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  502.0
 2023-10-03 17:58:02,275 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Completed
 2023-10-03 17:58:02,275 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:02,275 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:02,275 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:02,275 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:02,275 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249
 2023-10-03 17:58:02,275 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-08 17:56:33.0
@@ -265,13 +265,13 @@
 2023-10-03 17:58:02,276 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  168.0575
 2023-10-03 17:58:02,276 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Completed
 2023-10-03 17:58:03,065 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-11
-2023-10-03 17:58:03,071 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 4 requests today!
+2023-10-03 17:58:03,071 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 4 requestEntities today!
 2023-10-03 17:58:03,072 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515 Trip [tripId=515, requestId=5, startDate=2023-10-03 17:58:03.0, endDate=2023-10-03 17:58:03.0, totalPayment=0.0, tripStatus='In Progress']
-2023-10-03 17:58:03,103 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has been assigned a new trip (Trip ID: 515).
-2023-10-03 17:58:03,104 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New trip created:  Trip [tripId=515, requestId=5, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 17:56:33.0, totalPayment=483.0, tripStatus='In Progress']
+2023-10-03 17:58:03,103 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has been assigned a new tripEntity (Trip ID: 515).
+2023-10-03 17:58:03,104 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New tripEntity created:  Trip [tripId=515, requestId=5, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 17:56:33.0, totalPayment=483.0, tripStatus='In Progress']
 2023-10-03 17:58:03,111 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448 Trip [tripId=448, requestId=7, startDate=2023-10-03 17:58:03.0, endDate=2023-10-03 17:58:03.0, totalPayment=0.0, tripStatus='In Progress']
-2023-10-03 17:58:03,115 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 0 has been assigned a new trip (Trip ID: 448).
-2023-10-03 17:58:03,115 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New trip created:  Trip [tripId=448, requestId=7, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 17:56:33.0, totalPayment=180.0, tripStatus='In Progress']
+2023-10-03 17:58:03,115 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 0 has been assigned a new tripEntity (Trip ID: 448).
+2023-10-03 17:58:03,115 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New tripEntity created:  Trip [tripId=448, requestId=7, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 17:56:33.0, totalPayment=180.0, tripStatus='In Progress']
 2023-10-03 17:58:03,127 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='Broken']
 2023-10-03 17:58:03,127 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918 Trip [tripId=918, requestId=3, startDate=2023-10-06 17:56:33.0, endDate=2023-10-07 00:00:00.0, totalPayment=502.0, tripStatus='Completed']
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='Broken']
@@ -279,7 +279,7 @@
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515 Trip [tripId=515, requestId=5, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=483.0, tripStatus='In Progress']
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448 Trip [tripId=448, requestId=7, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=180.0, tripStatus='In Progress']
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -287,7 +287,7 @@
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-06 17:56:33.0
@@ -295,7 +295,7 @@
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  502.0
 2023-10-03 17:58:03,128 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Completed
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -303,7 +303,7 @@
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  321.0
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-08 17:56:33.0
@@ -311,7 +311,7 @@
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  138.0
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Completed
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -319,7 +319,7 @@
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  483.0
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: In Progress
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -327,33 +327,33 @@
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  180.0
 2023-10-03 17:58:03,129 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: In Progress
 2023-10-03 17:58:03,819 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-12
-2023-10-03 17:58:03,826 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 0 requests today!
+2023-10-03 17:58:03,826 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 0 requestEntities today!
 2023-10-03 17:58:03,828 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='Broken']
 2023-10-03 17:58:03,828 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918 Trip [tripId=918, requestId=3, startDate=2023-10-06 17:56:33.0, endDate=2023-10-07 00:00:00.0, totalPayment=502.0, tripStatus='Completed']
 2023-10-03 17:58:03,828 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='Broken']
 2023-10-03 17:58:03,828 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249 Trip [tripId=249, requestId=4, startDate=2023-10-08 17:56:33.0, endDate=2023-10-10 00:00:00.0, totalPayment=138.0, tripStatus='Completed']
 2023-10-03 17:58:03,828 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515 Trip [tripId=515, requestId=5, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=483.0, tripStatus='In Progress']
 2023-10-03 17:58:03,829 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448 Trip [tripId=448, requestId=7, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=180.0, tripStatus='In Progress']
-2023-10-03 17:58:03,829 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:03,835 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has not completed the request (Request ID: 3). Due to vehicle issues. Total earnings: $1100.0
-2023-10-03 17:58:03,836 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has requested a vehicle repair.
-2023-10-03 17:58:03,841 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has completed the trip (Trip ID: 918).
-2023-10-03 17:58:03,841 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:03,846 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the request (Request ID: 2). Due to vehicle issues. Total earnings: $600.0
-2023-10-03 17:58:03,846 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicle repair.
-2023-10-03 17:58:03,850 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 2 has completed the trip (Trip ID: 713).
-2023-10-03 17:58:03,850 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:03,855 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the request (Request ID: 4). Due to vehicle issues. Total earnings: $1200.0
-2023-10-03 17:58:03,855 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicle repair.
-2023-10-03 17:58:03,860 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has completed the trip (Trip ID: 249).
-2023-10-03 17:58:03,860 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:03,865 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has not completed the request (Request ID: 5). Due to vehicle issues. Total earnings: $2200.0
-2023-10-03 17:58:03,865 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has requested a vehicle repair.
-2023-10-03 17:58:03,869 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has completed the trip (Trip ID: 515).
-2023-10-03 17:58:03,874 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has completed the request (Request ID: 7). Total earnings: $900.0
-2023-10-03 17:58:03,877 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 0 has completed the trip (Trip ID: 448).
+2023-10-03 17:58:03,829 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:03,835 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has not completed the requestEntity (Request ID: 3). Due to vehicleEntity issues. Total earnings: $1100.0
+2023-10-03 17:58:03,836 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has requested a vehicleEntity repair.
+2023-10-03 17:58:03,841 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has completed the tripEntity (Trip ID: 918).
+2023-10-03 17:58:03,841 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:03,846 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the requestEntity (Request ID: 2). Due to vehicleEntity issues. Total earnings: $600.0
+2023-10-03 17:58:03,846 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicleEntity repair.
+2023-10-03 17:58:03,850 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 2 has completed the tripEntity (Trip ID: 713).
+2023-10-03 17:58:03,850 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:03,855 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the requestEntity (Request ID: 4). Due to vehicleEntity issues. Total earnings: $1200.0
+2023-10-03 17:58:03,855 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicleEntity repair.
+2023-10-03 17:58:03,860 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has completed the tripEntity (Trip ID: 249).
+2023-10-03 17:58:03,860 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:03,865 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has not completed the requestEntity (Request ID: 5). Due to vehicleEntity issues. Total earnings: $2200.0
+2023-10-03 17:58:03,865 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has requested a vehicleEntity repair.
+2023-10-03 17:58:03,869 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has completed the tripEntity (Trip ID: 515).
+2023-10-03 17:58:03,874 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has completed the requestEntity (Request ID: 7). Total earnings: $900.0
+2023-10-03 17:58:03,877 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 0 has completed the tripEntity (Trip ID: 448).
 2023-10-03 17:58:03,877 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:03,877 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:03,877 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:03,877 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:03,877 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -361,7 +361,7 @@
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-06 17:56:33.0
@@ -369,7 +369,7 @@
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  508.0575
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -377,7 +377,7 @@
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  327.0575
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-08 17:56:33.0
@@ -385,7 +385,7 @@
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  168.0575
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -393,7 +393,7 @@
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  489.0575
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -401,27 +401,27 @@
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  186.0575
 2023-10-03 17:58:03,878 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Completed
 2023-10-03 17:58:04,575 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-13
-2023-10-03 17:58:04,589 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 1 requests today!
+2023-10-03 17:58:04,589 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 1 requestEntities today!
 2023-10-03 17:58:04,591 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='Broken']
 2023-10-03 17:58:04,591 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918 Trip [tripId=918, requestId=3, startDate=2023-10-06 17:56:33.0, endDate=2023-10-07 00:00:00.0, totalPayment=502.0, tripStatus='Broken']
 2023-10-03 17:58:04,591 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='Broken']
 2023-10-03 17:58:04,591 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249 Trip [tripId=249, requestId=4, startDate=2023-10-08 17:56:33.0, endDate=2023-10-10 00:00:00.0, totalPayment=138.0, tripStatus='Broken']
 2023-10-03 17:58:04,592 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515 Trip [tripId=515, requestId=5, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=483.0, tripStatus='Broken']
 2023-10-03 17:58:04,592 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448 Trip [tripId=448, requestId=7, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=180.0, tripStatus='Completed']
-2023-10-03 17:58:04,592 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:04,627 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has not completed the request (Request ID: 3). Due to vehicle issues. Total earnings: $1100.0
-2023-10-03 17:58:04,627 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has requested a vehicle repair.
-2023-10-03 17:58:04,634 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has completed the trip (Trip ID: 918).
-2023-10-03 17:58:04,634 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:04,638 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the request (Request ID: 2). Due to vehicle issues. Total earnings: $600.0
-2023-10-03 17:58:04,638 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicle repair.
-2023-10-03 17:58:04,643 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 2 has completed the trip (Trip ID: 713).
-2023-10-03 17:58:04,643 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:04,648 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the request (Request ID: 4). Due to vehicle issues. Total earnings: $1200.0
-2023-10-03 17:58:04,648 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicle repair.
-2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has completed the trip (Trip ID: 249).
+2023-10-03 17:58:04,592 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:04,627 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has not completed the requestEntity (Request ID: 3). Due to vehicleEntity issues. Total earnings: $1100.0
+2023-10-03 17:58:04,627 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has requested a vehicleEntity repair.
+2023-10-03 17:58:04,634 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has completed the tripEntity (Trip ID: 918).
+2023-10-03 17:58:04,634 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:04,638 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the requestEntity (Request ID: 2). Due to vehicleEntity issues. Total earnings: $600.0
+2023-10-03 17:58:04,638 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicleEntity repair.
+2023-10-03 17:58:04,643 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 2 has completed the tripEntity (Trip ID: 713).
+2023-10-03 17:58:04,643 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:04,648 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the requestEntity (Request ID: 4). Due to vehicleEntity issues. Total earnings: $1200.0
+2023-10-03 17:58:04,648 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicleEntity repair.
+2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has completed the tripEntity (Trip ID: 249).
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -429,7 +429,7 @@
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-06 17:56:33.0
@@ -437,7 +437,7 @@
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  508.0575
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -445,7 +445,7 @@
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  327.0575
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249
 2023-10-03 17:58:04,653 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-08 17:56:33.0
@@ -453,7 +453,7 @@
 2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  168.0575
 2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515
 2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -461,7 +461,7 @@
 2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  483.0
 2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448
 2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -469,10 +469,10 @@
 2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  180.0
 2023-10-03 17:58:04,654 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Completed
 2023-10-03 17:58:05,329 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-14
-2023-10-03 17:58:05,338 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 1 requests today!
+2023-10-03 17:58:05,338 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 1 requestEntities today!
 2023-10-03 17:58:05,339 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #969 Trip [tripId=969, requestId=8, startDate=2023-10-03 17:58:05.0, endDate=2023-10-03 17:58:05.0, totalPayment=0.0, tripStatus='In Progress']
-2023-10-03 17:58:05,370 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 0 has been assigned a new trip (Trip ID: 969).
-2023-10-03 17:58:05,370 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New trip created:  Trip [tripId=969, requestId=8, startDate=2023-10-14 17:56:33.0, endDate=2023-10-19 17:56:33.0, totalPayment=169.0, tripStatus='In Progress']
+2023-10-03 17:58:05,370 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 0 has been assigned a new tripEntity (Trip ID: 969).
+2023-10-03 17:58:05,370 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New tripEntity created:  Trip [tripId=969, requestId=8, startDate=2023-10-14 17:56:33.0, endDate=2023-10-19 17:56:33.0, totalPayment=169.0, tripStatus='In Progress']
 2023-10-03 17:58:05,384 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='Broken']
 2023-10-03 17:58:05,384 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515 Trip [tripId=515, requestId=5, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=483.0, tripStatus='Broken']
 2023-10-03 17:58:05,385 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448 Trip [tripId=448, requestId=7, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=180.0, tripStatus='Completed']
@@ -480,12 +480,12 @@
 2023-10-03 17:58:05,385 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='Broken']
 2023-10-03 17:58:05,385 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249 Trip [tripId=249, requestId=4, startDate=2023-10-08 17:56:33.0, endDate=2023-10-10 00:00:00.0, totalPayment=138.0, tripStatus='Broken']
 2023-10-03 17:58:05,385 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #969 Trip [tripId=969, requestId=8, startDate=2023-10-14 17:56:33.0, endDate=2023-10-19 00:00:00.0, totalPayment=169.0, tripStatus='In Progress']
-2023-10-03 17:58:05,385 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:05,390 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has not completed the request (Request ID: 3). Due to vehicle issues. Total earnings: $1100.0
-2023-10-03 17:58:05,390 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has requested a vehicle repair.
-2023-10-03 17:58:05,395 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has completed the trip (Trip ID: 918).
+2023-10-03 17:58:05,385 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:05,390 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has not completed the requestEntity (Request ID: 3). Due to vehicleEntity issues. Total earnings: $1100.0
+2023-10-03 17:58:05,390 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has requested a vehicleEntity repair.
+2023-10-03 17:58:05,395 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has completed the tripEntity (Trip ID: 918).
 2023-10-03 17:58:05,395 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -493,7 +493,7 @@
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -501,7 +501,7 @@
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  483.0
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -509,7 +509,7 @@
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  180.0
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Completed
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-06 17:56:33.0
@@ -517,7 +517,7 @@
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  508.0575
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:05,396 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -525,7 +525,7 @@
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  321.0
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-08 17:56:33.0
@@ -533,7 +533,7 @@
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  138.0
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #969
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-14 17:56:33.0
@@ -541,7 +541,7 @@
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  169.0
 2023-10-03 17:58:05,397 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: In Progress
 2023-10-03 17:58:06,208 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-15
-2023-10-03 17:58:06,213 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 0 requests today!
+2023-10-03 17:58:06,213 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 0 requestEntities today!
 2023-10-03 17:58:06,215 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='Broken']
 2023-10-03 17:58:06,215 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515 Trip [tripId=515, requestId=5, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=483.0, tripStatus='Broken']
 2023-10-03 17:58:06,215 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448 Trip [tripId=448, requestId=7, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=180.0, tripStatus='Completed']
@@ -549,16 +549,16 @@
 2023-10-03 17:58:06,215 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249 Trip [tripId=249, requestId=4, startDate=2023-10-08 17:56:33.0, endDate=2023-10-10 00:00:00.0, totalPayment=138.0, tripStatus='Broken']
 2023-10-03 17:58:06,215 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #969 Trip [tripId=969, requestId=8, startDate=2023-10-14 17:56:33.0, endDate=2023-10-19 00:00:00.0, totalPayment=169.0, tripStatus='In Progress']
 2023-10-03 17:58:06,215 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918 Trip [tripId=918, requestId=3, startDate=2023-10-06 17:56:33.0, endDate=2023-10-07 00:00:00.0, totalPayment=502.0, tripStatus='Broken']
-2023-10-03 17:58:06,215 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:06,250 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has not completed the request (Request ID: 7). Due to vehicle issues. Total earnings: $900.0
-2023-10-03 17:58:06,250 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has requested a vehicle repair.
-2023-10-03 17:58:06,257 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 0 has completed the trip (Trip ID: 448).
-2023-10-03 17:58:06,257 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:06,261 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has not completed the request (Request ID: 8). Due to vehicle issues. Total earnings: $1800.0
-2023-10-03 17:58:06,261 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has requested a vehicle repair.
-2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 0 has completed the trip (Trip ID: 969).
+2023-10-03 17:58:06,215 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:06,250 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has not completed the requestEntity (Request ID: 7). Due to vehicleEntity issues. Total earnings: $900.0
+2023-10-03 17:58:06,250 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has requested a vehicleEntity repair.
+2023-10-03 17:58:06,257 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 0 has completed the tripEntity (Trip ID: 448).
+2023-10-03 17:58:06,257 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:06,261 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has not completed the requestEntity (Request ID: 8). Due to vehicleEntity issues. Total earnings: $1800.0
+2023-10-03 17:58:06,261 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has requested a vehicleEntity repair.
+2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 0 has completed the tripEntity (Trip ID: 969).
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -566,7 +566,7 @@
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -574,7 +574,7 @@
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  483.0
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -582,7 +582,7 @@
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  186.0575
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:06,266 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -590,7 +590,7 @@
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  321.0
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-08 17:56:33.0
@@ -598,7 +598,7 @@
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  138.0
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #969
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-14 17:56:33.0
@@ -606,7 +606,7 @@
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  271.0575
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-06 17:56:33.0
@@ -614,7 +614,7 @@
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  502.0
 2023-10-03 17:58:06,267 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:07,026 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-16
-2023-10-03 17:58:07,031 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 4 requests today!
+2023-10-03 17:58:07,031 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 4 requestEntities today!
 2023-10-03 17:58:07,032 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='Broken']
 2023-10-03 17:58:07,032 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515 Trip [tripId=515, requestId=5, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=483.0, tripStatus='Broken']
 2023-10-03 17:58:07,033 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='Broken']
@@ -622,16 +622,16 @@
 2023-10-03 17:58:07,033 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918 Trip [tripId=918, requestId=3, startDate=2023-10-06 17:56:33.0, endDate=2023-10-07 00:00:00.0, totalPayment=502.0, tripStatus='Broken']
 2023-10-03 17:58:07,033 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448 Trip [tripId=448, requestId=7, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=180.0, tripStatus='Broken']
 2023-10-03 17:58:07,033 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #969 Trip [tripId=969, requestId=8, startDate=2023-10-14 17:56:33.0, endDate=2023-10-19 00:00:00.0, totalPayment=169.0, tripStatus='Broken']
-2023-10-03 17:58:07,033 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:07,068 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has not completed the request (Request ID: 7). Due to vehicle issues. Total earnings: $900.0
-2023-10-03 17:58:07,068 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has requested a vehicle repair.
-2023-10-03 17:58:07,075 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 0 has completed the trip (Trip ID: 448).
-2023-10-03 17:58:07,075 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:07,080 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has not completed the request (Request ID: 8). Due to vehicle issues. Total earnings: $1800.0
-2023-10-03 17:58:07,080 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has requested a vehicle repair.
-2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 0 has completed the trip (Trip ID: 969).
+2023-10-03 17:58:07,033 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:07,068 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has not completed the requestEntity (Request ID: 7). Due to vehicleEntity issues. Total earnings: $900.0
+2023-10-03 17:58:07,068 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has requested a vehicleEntity repair.
+2023-10-03 17:58:07,075 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 0 has completed the tripEntity (Trip ID: 448).
+2023-10-03 17:58:07,075 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:07,080 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has not completed the requestEntity (Request ID: 8). Due to vehicleEntity issues. Total earnings: $1800.0
+2023-10-03 17:58:07,080 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Magnus has requested a vehicleEntity repair.
+2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 0 has completed the tripEntity (Trip ID: 969).
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -639,7 +639,7 @@
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -647,7 +647,7 @@
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  483.0
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -655,7 +655,7 @@
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  321.0
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-08 17:56:33.0
@@ -663,7 +663,7 @@
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  138.0
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-06 17:56:33.0
@@ -671,7 +671,7 @@
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  502.0
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -679,7 +679,7 @@
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  186.0575
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:07,086 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #969
 2023-10-03 17:58:07,087 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-14 17:56:33.0
@@ -687,7 +687,7 @@
 2023-10-03 17:58:07,087 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  271.0575
 2023-10-03 17:58:07,087 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:11,523 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-17
-2023-10-03 17:58:11,537 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 0 requests today!
+2023-10-03 17:58:11,537 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 0 requestEntities today!
 2023-10-03 17:58:11,539 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='Broken']
 2023-10-03 17:58:11,539 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515 Trip [tripId=515, requestId=5, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=483.0, tripStatus='Broken']
 2023-10-03 17:58:11,539 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='Broken']
@@ -696,7 +696,7 @@
 2023-10-03 17:58:11,539 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448 Trip [tripId=448, requestId=7, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=180.0, tripStatus='Broken']
 2023-10-03 17:58:11,539 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #969 Trip [tripId=969, requestId=8, startDate=2023-10-14 17:56:33.0, endDate=2023-10-19 00:00:00.0, totalPayment=169.0, tripStatus='Broken']
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -704,7 +704,7 @@
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -712,7 +712,7 @@
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  483.0
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -720,7 +720,7 @@
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  321.0
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-08 17:56:33.0
@@ -728,7 +728,7 @@
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  138.0
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-06 17:56:33.0
@@ -736,7 +736,7 @@
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  502.0
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -744,7 +744,7 @@
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  180.0
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #969
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-14 17:56:33.0
@@ -752,7 +752,7 @@
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  169.0
 2023-10-03 17:58:11,540 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:12,783 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-18
-2023-10-03 17:58:12,798 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 3 requests today!
+2023-10-03 17:58:12,798 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 3 requestEntities today!
 2023-10-03 17:58:12,799 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='Broken']
 2023-10-03 17:58:12,800 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515 Trip [tripId=515, requestId=5, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=483.0, tripStatus='Broken']
 2023-10-03 17:58:12,800 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='Broken']
@@ -760,16 +760,16 @@
 2023-10-03 17:58:12,800 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918 Trip [tripId=918, requestId=3, startDate=2023-10-06 17:56:33.0, endDate=2023-10-07 00:00:00.0, totalPayment=502.0, tripStatus='Broken']
 2023-10-03 17:58:12,800 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448 Trip [tripId=448, requestId=7, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=180.0, tripStatus='Broken']
 2023-10-03 17:58:12,800 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #969 Trip [tripId=969, requestId=8, startDate=2023-10-14 17:56:33.0, endDate=2023-10-19 00:00:00.0, totalPayment=169.0, tripStatus='Broken']
-2023-10-03 17:58:12,800 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:12,835 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the request (Request ID: 2). Due to vehicle issues. Total earnings: $600.0
-2023-10-03 17:58:12,835 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicle repair.
-2023-10-03 17:58:12,840 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 2 has completed the trip (Trip ID: 713).
-2023-10-03 17:58:12,840 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicle issues.
-2023-10-03 17:58:12,845 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has not completed the request (Request ID: 3). Due to vehicle issues. Total earnings: $1100.0
-2023-10-03 17:58:12,845 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has requested a vehicle repair.
-2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has completed the trip (Trip ID: 918).
+2023-10-03 17:58:12,800 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:12,835 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has not completed the requestEntity (Request ID: 2). Due to vehicleEntity issues. Total earnings: $600.0
+2023-10-03 17:58:12,835 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Jack has requested a vehicleEntity repair.
+2023-10-03 17:58:12,840 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 2 has completed the tripEntity (Trip ID: 713).
+2023-10-03 17:58:12,840 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-03 17:58:12,845 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has not completed the requestEntity (Request ID: 3). Due to vehicleEntity issues. Total earnings: $1100.0
+2023-10-03 17:58:12,845 [main] INFO  com.yourorganization.maven_sample.hw2.models.Driver - Driver Bob has requested a vehicleEntity repair.
+2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has completed the tripEntity (Trip ID: 918).
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -777,7 +777,7 @@
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -785,7 +785,7 @@
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  483.0
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -793,7 +793,7 @@
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  327.0575
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:12,851 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-08 17:56:33.0
@@ -801,7 +801,7 @@
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  138.0
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-06 17:56:33.0
@@ -809,7 +809,7 @@
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  508.0575
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -817,7 +817,7 @@
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  180.0
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #969
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-14 17:56:33.0
@@ -825,7 +825,7 @@
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  169.0
 2023-10-03 17:58:12,852 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:13,696 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New day started: 2023-10-19
-2023-10-03 17:58:13,714 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 4 requests today!
+2023-10-03 17:58:13,714 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Dispatcher got 4 requestEntities today!
 2023-10-03 17:58:13,715 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119 Trip [tripId=119, requestId=1, startDate=2023-10-03 17:56:33.0, endDate=2023-10-05 00:00:00.0, totalPayment=206.0, tripStatus='Broken']
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515 Trip [tripId=515, requestId=5, startDate=2023-10-11 17:56:33.0, endDate=2023-10-12 00:00:00.0, totalPayment=483.0, tripStatus='Broken']
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249 Trip [tripId=249, requestId=4, startDate=2023-10-08 17:56:33.0, endDate=2023-10-10 00:00:00.0, totalPayment=138.0, tripStatus='Broken']
@@ -834,7 +834,7 @@
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713 Trip [tripId=713, requestId=2, startDate=2023-10-03 17:56:33.0, endDate=2023-10-04 00:00:00.0, totalPayment=321.0, tripStatus='Broken']
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918 Trip [tripId=918, requestId=3, startDate=2023-10-06 17:56:33.0, endDate=2023-10-07 00:00:00.0, totalPayment=502.0, tripStatus='Broken']
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #119
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -842,7 +842,7 @@
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  206.0
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #515
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -850,7 +850,7 @@
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  483.0
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #249
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-08 17:56:33.0
@@ -858,7 +858,7 @@
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  138.0
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #448
 2023-10-03 17:58:13,716 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-11 17:56:33.0
@@ -866,7 +866,7 @@
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  180.0
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #969
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-14 17:56:33.0
@@ -874,7 +874,7 @@
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  169.0
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #713
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-03 17:56:33.0
@@ -882,7 +882,7 @@
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  321.0
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
-2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All trips:
+2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - All tripEntities:
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - ------------------------------
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #918
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Placed at 2023-10-06 17:56:33.0
@@ -890,11 +890,110 @@
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Total payment:  502.0
 2023-10-03 17:58:13,717 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Status: Broken
 2023-10-04 22:00:47,673 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #1922 Trip [tripId=1922, requestId=999, startDate=2023-10-04 22:00:47.0, endDate=2023-10-04 22:00:47.0, totalPayment=0.0, tripStatus='In Progress']
-2023-10-04 22:00:47,679 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 1 has been assigned a new trip (Trip ID: 1922).
-2023-10-04 22:00:47,679 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New trip created:  Trip [tripId=1922, requestId=999, startDate=2023-10-04 22:00:47.0, endDate=2023-10-06 22:00:47.0, totalPayment=368.0, tripStatus='In Progress']
+2023-10-04 22:00:47,679 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 1 has been assigned a new tripEntity (Trip ID: 1922).
+2023-10-04 22:00:47,679 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New tripEntity created:  Trip [tripId=1922, requestId=999, startDate=2023-10-04 22:00:47.0, endDate=2023-10-06 22:00:47.0, totalPayment=368.0, tripStatus='In Progress']
 2023-10-04 22:06:13,327 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #1755 Trip [tripId=1755, requestId=999, startDate=2023-10-04 22:06:13.0, endDate=2023-10-04 22:06:13.0, totalPayment=0.0, tripStatus='In Progress']
-2023-10-04 22:06:13,332 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 2 has been assigned a new trip (Trip ID: 1755).
-2023-10-04 22:06:13,332 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New trip created:  Trip [tripId=1755, requestId=999, startDate=2023-10-04 22:06:13.0, endDate=2023-10-09 22:06:13.0, totalPayment=290.0, tripStatus='In Progress']
+2023-10-04 22:06:13,332 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 2 has been assigned a new tripEntity (Trip ID: 1755).
+2023-10-04 22:06:13,332 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New tripEntity created:  Trip [tripId=1755, requestId=999, startDate=2023-10-04 22:06:13.0, endDate=2023-10-09 22:06:13.0, totalPayment=290.0, tripStatus='In Progress']
 2023-10-04 22:22:45,403 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - Trip #1697 Trip [tripId=1697, requestId=999, startDate=2023-10-04 22:22:45.0, endDate=2023-10-04 22:22:45.0, totalPayment=0.0, tripStatus='In Progress']
-2023-10-04 22:22:45,434 [main] INFO  com.yourorganization.maven_sample.hw2.models.Vehicle - Vehicle 0 has been assigned a new trip (Trip ID: 1697).
-2023-10-04 22:22:45,435 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New trip created:  Trip [tripId=1697, requestId=999, startDate=2023-10-04 22:22:44.0, endDate=2023-10-09 22:22:44.0, totalPayment=368.0, tripStatus='In Progress']
+2023-10-04 22:22:45,434 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 0 has been assigned a new tripEntity (Trip ID: 1697).
+2023-10-04 22:22:45,435 [main] INFO  com.yourorganization.maven_sample.hw2.models.Dispatcher - New tripEntity created:  Trip [tripId=1697, requestId=999, startDate=2023-10-04 22:22:44.0, endDate=2023-10-09 22:22:44.0, totalPayment=368.0, tripStatus='In Progress']
+2023-10-08 14:45:51,929 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - ### Cannot invoke "java.sql.Statement.executeQuery(String)" because "com.yourorganization.maven_sample.models.DatabaseService.statement" is null
+2023-10-08 14:45:51,941 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - ### Cannot invoke "java.sql.Statement.executeQuery(String)" because "com.yourorganization.maven_sample.models.DatabaseService.statement" is null
+2023-10-08 14:45:51,942 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - **************************************
+2023-10-08 14:45:51,942 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Processing requestEntity number #999...
+2023-10-08 14:45:51,944 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - **************************************
+2023-10-08 14:45:51,944 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Processing requestEntity number #1000...
+2023-10-08 14:46:55,377 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - ### Cannot invoke "java.sql.Statement.executeQuery(String)" because "com.yourorganization.maven_sample.models.DatabaseService.statement" is null
+2023-10-08 14:49:21,558 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - ### Cannot invoke "java.sql.Statement.executeQuery(String)" because "com.yourorganization.maven_sample.models.DatabaseService.statement" is null
+2023-10-08 14:49:21,560 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - **************************************
+2023-10-08 14:49:21,560 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Processing requestEntity number #999...
+2023-10-08 14:49:21,561 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - **************************************
+2023-10-08 14:49:21,561 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Processing requestEntity number #1000...
+2023-10-08 14:51:05,422 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - New day started: 2023-10-08
+2023-10-08 14:51:05,426 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Dispatcher got 3 requestEntities today!
+2023-10-08 14:51:05,426 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - **************************************
+2023-10-08 14:51:05,426 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Processing requestEntity number #1000...
+2023-10-08 14:51:05,428 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - **************************************
+2023-10-08 14:51:05,428 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Processing requestEntity number #1001...
+2023-10-08 14:51:05,429 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - **************************************
+2023-10-08 14:51:05,429 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Processing requestEntity number #1002...
+2023-10-08 14:51:05,435 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Trip #1755 Trip [tripId=1755, requestId=999, startDate=2023-10-04 22:06:13.0, endDate=2023-10-09 00:00:00.0, totalPayment=290.0, tripStatus='In Progress']
+2023-10-08 14:51:05,435 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Trip #1697 Trip [tripId=1697, requestId=999, startDate=2023-10-04 22:22:44.0, endDate=2023-10-09 00:00:00.0, totalPayment=368.0, tripStatus='In Progress']
+2023-10-08 14:51:05,436 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Trip cannot be completed due to vehicleEntity issues.
+2023-10-08 14:51:05,450 [main] INFO  com.yourorganization.maven_sample.entity.DriverEntity - Driver Jack has not completed the requestEntity (Request ID: 999). Due to vehicleEntity issues. Total earnings: $600.0
+2023-10-08 14:51:05,451 [main] INFO  com.yourorganization.maven_sample.entity.DriverEntity - Driver Jack has requested a vehicleEntity repair.
+2023-10-08 14:51:05,463 [main] INFO  com.yourorganization.maven_sample.entity.VehicleEntity - Vehicle 2 has completed the tripEntity (Trip ID: 1755).
+2023-10-08 14:51:05,463 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - ------------------------------
+2023-10-08 14:51:05,464 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - All tripEntities:
+2023-10-08 14:51:05,464 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - ------------------------------
+2023-10-08 14:51:05,464 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - ------------------------------
+2023-10-08 14:51:05,464 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Trip #1755
+2023-10-08 14:51:05,464 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Placed at 2023-10-04 22:06:13.0
+2023-10-08 14:51:05,464 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Ends at 2023-10-09 00:00:00.0
+2023-10-08 14:51:05,464 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Total payment:  387.8963888888889
+2023-10-08 14:51:05,464 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Status: Broken
+2023-10-08 14:51:05,464 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - ------------------------------
+2023-10-08 14:51:05,464 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Trip #1697
+2023-10-08 14:51:05,464 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Placed at 2023-10-04 22:22:44.0
+2023-10-08 14:51:05,465 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Ends at 2023-10-09 00:00:00.0
+2023-10-08 14:51:05,465 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Total payment:  368.0
+2023-10-08 14:51:05,465 [main] INFO  com.yourorganization.maven_sample.models.Dispatcher - Status: In Progress
+2023-10-09 22:14:12,280 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Dispatcher got 4 requests today!
+2023-10-09 22:14:12,281 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - **************************************
+2023-10-09 22:14:12,281 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Processing request number #999...
+2023-10-09 22:14:12,281 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Request number #999 is already proceeded
+2023-10-09 22:14:12,370 [main] INFO  com.yourorganization.maven_sample.entity.DriverEntity - Driver Jack has finished the request (Request ID: 999
+2023-10-09 22:14:12,387 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:14:12,387 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - All trips:
+2023-10-09 22:14:12,387 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:14:12,388 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:14:12,388 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Trip #1697
+2023-10-09 22:14:12,388 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Placed at 2023-10-04 22:22:44.0
+2023-10-09 22:14:12,388 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Ends at 2023-10-09 00:00:00.0
+2023-10-09 22:14:12,388 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Total payment:  368.0
+2023-10-09 22:14:12,388 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Status: Completed
+2023-10-09 22:14:12,388 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:14:12,388 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Trip #1755
+2023-10-09 22:14:12,388 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Placed at 2023-10-04 22:06:13.0
+2023-10-09 22:14:12,388 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Ends at 2023-10-09 00:00:00.0
+2023-10-09 22:14:12,388 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Total payment:  290.0
+2023-10-09 22:14:12,388 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Status: Broken
+2023-10-09 22:19:17,903 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Dispatcher got 4 requests today!
+2023-10-09 22:19:17,903 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - **************************************
+2023-10-09 22:19:17,903 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Processing request number #999...
+2023-10-09 22:19:17,904 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Request number #999 is already proceeded
+2023-10-09 22:19:18,034 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:19:18,034 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - All trips:
+2023-10-09 22:19:18,034 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:19:18,034 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:19:18,034 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Trip #1697
+2023-10-09 22:19:18,035 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Placed at 2023-10-04 22:22:44.0
+2023-10-09 22:19:18,035 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Ends at 2023-10-09 00:00:00.0
+2023-10-09 22:19:18,035 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Total payment:  368.0
+2023-10-09 22:19:18,035 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Status: Issues
+2023-10-09 22:19:18,035 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:19:18,035 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Trip #1755
+2023-10-09 22:19:18,035 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Placed at 2023-10-04 22:06:13.0
+2023-10-09 22:19:18,035 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Ends at 2023-10-09 00:00:00.0
+2023-10-09 22:19:18,035 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Total payment:  290.0
+2023-10-09 22:19:18,035 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Status: Issues
+2023-10-09 22:19:37,032 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Dispatcher got 0 requests today!
+2023-10-09 22:19:37,032 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - **************************************
+2023-10-09 22:19:37,032 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Processing request number #999...
+2023-10-09 22:19:37,032 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Request number #999 is already proceeded
+2023-10-09 22:19:37,059 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:19:37,059 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - All trips:
+2023-10-09 22:19:37,059 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:19:37,059 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:19:37,059 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Trip #1697
+2023-10-09 22:19:37,059 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Placed at 2023-10-04 22:22:44.0
+2023-10-09 22:19:37,059 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Ends at 2023-10-09 00:00:00.0
+2023-10-09 22:19:37,059 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Total payment:  368.0
+2023-10-09 22:19:37,059 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Status: Issues
+2023-10-09 22:19:37,059 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:19:37,060 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Trip #1755
+2023-10-09 22:19:37,060 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Placed at 2023-10-04 22:06:13.0
+2023-10-09 22:19:37,060 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Ends at 2023-10-09 00:00:00.0
+2023-10-09 22:19:37,060 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Total payment:  290.0
+2023-10-09 22:19:37,060 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Status: Issues
