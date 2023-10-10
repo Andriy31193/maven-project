@@ -997,3 +997,22 @@
 2023-10-09 22:19:37,060 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Ends at 2023-10-09 00:00:00.0
 2023-10-09 22:19:37,060 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Total payment:  290.0
 2023-10-09 22:19:37,060 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Status: Issues
+2023-10-09 22:57:43,409 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Dispatcher got 1 requests today!
+2023-10-09 22:57:43,409 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - **************************************
+2023-10-09 22:57:43,409 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Processing request number #999...
+2023-10-09 22:57:43,409 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Request number #999 is already proceeded
+2023-10-09 22:57:43,491 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:57:43,491 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - All trips:
+2023-10-09 22:57:43,491 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:57:43,491 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:57:43,491 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Trip #1697
+2023-10-09 22:57:43,492 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Placed at 2023-10-04 22:22:44.0
+2023-10-09 22:57:43,492 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Ends at 2023-10-09 00:00:00.0
+2023-10-09 22:57:43,492 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Total payment:  368.0
+2023-10-09 22:57:43,492 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Status: Issues
+2023-10-09 22:57:43,492 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - ------------------------------
+2023-10-09 22:57:43,492 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Trip #1755
+2023-10-09 22:57:43,492 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Placed at 2023-10-04 22:06:13.0
+2023-10-09 22:57:43,492 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Ends at 2023-10-09 00:00:00.0
+2023-10-09 22:57:43,492 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Total payment:  290.0
+2023-10-09 22:57:43,492 [main] INFO  com.yourorganization.maven_sample.services.DispatcherService - Status: Issues

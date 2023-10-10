@@ -2,13 +2,10 @@ package com.yourorganization.maven_sample.models;
 
 import com.yourorganization.maven_sample.TestMaven;
 import com.yourorganization.maven_sample.services.DispatcherService;
-import com.yourorganization.maven_sample.services.RequestService;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ApplicationContext;
-
-import java.util.ArrayList;
 
 
 public class DispatcherTest {
